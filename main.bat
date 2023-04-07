@@ -1,7 +1,7 @@
 @echo off
 set /p url=Enter URL To scrap: 
-scrapy runspider "updated scrapy.py" -a start_urls=%url% -o output.json
-python you.py
+scrapy runspider "YouTube-spider.py" -a start_urls=%url% -o output.json
+python Streem-to-vlc.py
 set regKey=HKEY_LOCAL_MACHINE\SOFTWARE\VideoLAN\VLC
 set regValue=InstallDir
 set playlist_folder=%cd%
